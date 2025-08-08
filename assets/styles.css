@@ -615,3 +615,70 @@ canvas {
 .twitter-ribbon a:hover {
     background: rgba(29, 161, 242, 0.9);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-nav {
+        display: none; /* Hide navigation by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        position: absolute;
+        top: 100%; /* Position below the header */
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .page-nav.active {
+        display: flex; /* Show when active */
+    }
+
+    .page-nav a {
+        margin: 10px 0;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger menu */
+        background: none;
+        border: none;
+        color: #003366;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .main-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-header .logo {
+        margin-bottom: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .areas-grid, .toolbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title {
+        font-size: 2.2em;
+    }
+}

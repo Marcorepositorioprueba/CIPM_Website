@@ -126,6 +126,9 @@
                 <a href="proximos_eventos.html">Próximos Eventos</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -180,6 +183,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/main_script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const pageNav = document.querySelector('.page-nav');
+
+            if (menuToggle && pageNav) {
+                menuToggle.addEventListener('click', function () {
+                    pageNav.classList.toggle('active');
+                });
+            }
+        });
+    </script>
     <div class="social-ribbon facebook-ribbon">
         <a href="https://www.facebook.com/CIPM" target="_blank" aria-label="Visita nuestra página de Facebook">
             <i class="fab fa-facebook-f"></i>
