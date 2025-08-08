@@ -1,0 +1,111 @@
+/* Estilos para main.html */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Permite que los elementos hijos se apilen verticalmente */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+main {
+    flex: 1; /* Permite que main ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+}
+
+.pillars-section {
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    flex: 1; /* Permite que la sección ocupe el espacio restante dentro de main */
+    display: flex;
+    flex-direction: column;
+}
+
+.pillars-section h2 {
+    color: #003366;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+    flex-shrink: 0; /* Evita que el título se encoja */
+}
+
+.pillars-carousel {
+    width: 100%;
+    height: auto; /* Se ajustará automáticamente */
+    flex: 1; /* Permite que el carrusel ocupe el espacio restante */
+}
+
+.pillars-carousel .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.pillars-carousel .slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pillars-carousel .slide-overlay h3 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.pillars-carousel .slide-overlay p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.pillars-carousel .swiper-button-next, .pillars-carousel .swiper-button-prev {
+    color: #ffffff;
+    --swiper-navigation-size: 40px;
+}
+
+.pillars-carousel .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.pillars-carousel .swiper-pagination-bullet-active {
+    background: #ffffff;
+}
+
+.main-footer {
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 0;
+    flex-shrink: 0; /* Evita que el footer se encoja */
+}
