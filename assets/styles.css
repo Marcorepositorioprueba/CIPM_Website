@@ -616,6 +616,10 @@ canvas {
     background: rgba(29, 161, 242, 0.9);
 }
 
+.menu-toggle {
+    display: none; /* Hidden by default on large screens */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .page-nav {
