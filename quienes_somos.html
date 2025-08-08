@@ -140,6 +140,11 @@
             margin: 0;
         }
 
+        .video-container {
+            margin: 30px 0;
+            position: relative;
+        }
+
         /* Animaciones de texto */
         .animated-text {
             opacity: 0;
@@ -183,9 +188,12 @@
         <div class="description-section">
             <p class="animated-text-professional" style="animation-delay: 0.6s;">El Centro de Investigación en Políticas Municipales (CIPM) es una institución dedicada a transformar la gestión pública a nivel local. Nos especializamos en dotar a los gobiernos municipales de herramientas, conocimientos y estrategias innovadoras para enfrentar los desafíos actuales y futuros.</p>
 
-            <!-- Video Placeholder -->
-            <div class="video-placeholder animated-text-professional" style="background-image: url('imagenes/objetivo.jpg'); animation-delay: 0.8s;" role="button" aria-label="Reproducir video sobre el CIPM">
-                <span class="play-button"><i class="fas fa-play-circle"></i></span>
+            <!-- Video CIPM -->
+            <div class="video-container animated-text-professional" style="animation-delay: 0.8s;">
+                <video controls style="width: 100%; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.12);">
+                    <source src="Video/videocipm.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
             </div>
 
             <p class="animated-text-professional" style="animation-delay: 1s;">En el CIPM, creemos que una gestión municipal eficiente, transparente y orientada a resultados es la base para el bienestar ciudadano y el progreso de nuestras comunidades.</p>
